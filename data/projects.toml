@@ -1,0 +1,208 @@
+# The curated list. scripts/build_readme.py turns this file into README.md.
+#
+# Each project:
+#   repo    = "owner/name" on GitHub (required)
+#   desc    = one neutral sentence, no marketing claims (required)
+#   license = set only when GitHub cannot detect it (it reports NOASSERTION)
+#   source_available = true when the main code is not under an OSI-approved license
+#
+# Stars, archived status and last-push dates come from the GitHub API on every build.
+# Do not type them here.
+
+[[category]]
+name = "All-in-one LLMOps platforms"
+blurb = "Platforms that combine at least two of tracing, evaluation, prompt management and a gateway in one product."
+projects = [
+  { repo = "langfuse/langfuse", desc = "Tracing, evaluations, prompt management and datasets for LLM apps and agents.", license = "MIT + EE" },
+  { repo = "mlflow/mlflow", desc = "ML and AI engineering platform with LLM tracing, evaluation and a prompt registry." },
+  { repo = "comet-ml/opik", desc = "Tracing, automated evaluations and production monitoring for LLM apps, RAG and agents." },
+  { repo = "tensorzero/tensorzero", desc = "LLM gateway, observability, evaluation, optimization and experimentation in one stack." },
+  { repo = "coze-dev/coze-loop", desc = "Agent development platform with prompt debugging, evaluation and trace monitoring." },
+  { repo = "Kiln-AI/Kiln", desc = "Desktop app and library for evals, synthetic data, fine-tuning and dataset management.", license = "MIT (libs) + EULA (app)", source_available = true },
+  { repo = "langwatch/langwatch", desc = "Agent observability, evaluations, simulations and prompt management." },
+  { repo = "Agenta-AI/agenta", desc = "Prompt playground, prompt versioning, evaluation and observability for LLM apps.", license = "MIT + EE" },
+  { repo = "latitude-dev/latitude-llm", desc = "Prompt management, evaluations and observability for AI agents." },
+  { repo = "pezzolabs/pezzo", desc = "Prompt design, versioning, delivery and observability for LLM apps." },
+  { repo = "future-agi/future-agi", desc = "Tracing, evals, simulations, datasets and guardrails for LLM and agent apps." },
+  { repo = "wandb/weave", desc = "Tracing, evaluations and scoring for LLM apps, from Weights & Biases." },
+  { repo = "chirpz-ai/pandaprobe", desc = "Traces, evals and metrics for agents built with LangGraph, CrewAI and others." },
+  { repo = "overmind-core/overmind", desc = "Tracing and evaluation loop for continuously improving AI agents." },
+  { repo = "TensorOpsAI/LLMstudio", desc = "LLM proxy, prompt playground and request logging for production apps." },
+  { repo = "palico-ai/palico-ai", desc = "Framework for building, experimenting with and evaluating LLM applications." },
+  { repo = "star-whale/starwhale", desc = "MLOps and LLMOps platform for model evaluation, datasets and fine-tuning." },
+  { repo = "epuerta9/kitchenai", desc = "LLMOps toolkit for building, testing and deploying AI app backends." },
+  { repo = "kubeagi/arcadia", desc = "Kubernetes-native LLMOps platform for model serving, RAG and agent apps." },
+  { repo = "litefuse/litefuse", desc = "Lightweight agent observability and evaluation platform derived from Langfuse.", license = "MIT" },
+  { repo = "AcruxCore/AcruxCore", desc = "Prompt management, an OpenAI-compatible gateway, OpenTelemetry tracing, a tool catalog and evals." },
+]
+
+[[category]]
+name = "Observability and tracing"
+blurb = "Record LLM calls, agent steps, cost and latency, and let you inspect them."
+projects = [
+  { repo = "raga-ai-hub/RagaAI-Catalyst", desc = "Python SDK for agent tracing, monitoring and evaluation." },
+  { repo = "Arize-ai/phoenix", desc = "Tracing, evaluation and dataset experiments built on OpenTelemetry.", license = "Elastic-2.0", source_available = true },
+  { repo = "evidentlyai/evidently", desc = "Evaluation, testing and monitoring for ML models and LLM systems." },
+  { repo = "Helicone/helicone", desc = "Proxy-based LLM observability: request logging, cost tracking, sessions and prompts." },
+  { repo = "AgentOps-AI/agentops", desc = "Python SDK for agent monitoring, cost tracking and session replay." },
+  { repo = "pydantic/logfire", desc = "Observability for LLM and agent systems, built on OpenTelemetry, from the Pydantic team." },
+  { repo = "lmnr-ai/lmnr", desc = "Tracing, evaluations and session replay purpose-built for AI agents." },
+  { repo = "openlit/openlit", desc = "OpenTelemetry-native tracing, evaluation, guardrails and GPU monitoring for AI apps." },
+  { repo = "Scale3-Labs/langtrace", desc = "OpenTelemetry-based tracing and evaluation for LLM applications." },
+  { repo = "whylabs/langkit", desc = "Extracts quality and safety signals from prompts and responses for monitoring." },
+  { repo = "deepchecks/deepchecks", desc = "Validation and testing for ML models and data, including LLM checks." },
+  { repo = "langchain-ai/langsmith-sdk", desc = "Client SDKs for LangSmith tracing and evaluation (the LangSmith server is not open source)." },
+  { repo = "traceroot-ai/traceroot", desc = "Tracing and debugging layer for AI agents.", license = "Apache-2.0 + EE" },
+  { repo = "vllora/vllora", desc = "Local debugging and tracing for AI agents.", license = "Elastic-2.0", source_available = true },
+  { repo = "PromptSail/prompt_sail", desc = "LLM proxy that captures and logs every request and response." },
+  { repo = "grafana/agento11y", desc = "Agent observability from Grafana Labs." },
+  { repo = "cyberark/agentwatch", desc = "Observability for agent interactions across frameworks." },
+  { repo = "myscale/myscale-telemetry", desc = "Tracing for LLM applications stored in MyScale." },
+  { repo = "dillionverma/llm.report", desc = "Logging and cost analytics for OpenAI API requests." },
+  { repo = "langchain-tracer/Axon", desc = "OpenTelemetry-native CLI that shows LLM and agent traces in real time." },
+  { repo = "Siddhant-K-code/agent-trace", desc = "Shows what an agent did, what it cost and where it failed." },
+  { repo = "traccia-ai/traccia-py", desc = "OpenTelemetry-native SDK for agent tracing, evaluation and policy enforcement." },
+  { repo = "tma1-ai/tma1", desc = "Local-first LLM call recorder that feeds what it sees back to the agent." },
+  { repo = "evilmartians/agent-prism", desc = "React components for visualizing AI agent traces." },
+  { repo = "dunetrace/dunetrace", desc = "Runtime reliability checks for AI agents.", license = "Apache-2.0" },
+  { repo = "radicalbit/radicalbit-ai-monitoring", desc = "Monitoring for ML models and LLMs in production." },
+]
+
+[[category]]
+name = "OpenTelemetry instrumentation"
+blurb = "Libraries that emit LLM spans in OpenTelemetry format, so any compatible backend can read them."
+projects = [
+  { repo = "traceloop/openllmetry", desc = "OpenTelemetry instrumentation for LLM providers, vector DBs and frameworks (Python)." },
+  { repo = "Arize-ai/openinference", desc = "OpenTelemetry semantic conventions and instrumentation for AI apps." },
+  { repo = "traceloop/openllmetry-js", desc = "OpenTelemetry instrumentation for LLM apps (TypeScript)." },
+]
+
+[[category]]
+name = "Evaluation and testing"
+blurb = "Score LLM outputs, run test suites and benchmarks, and catch regressions."
+projects = [
+  { repo = "promptfoo/promptfoo", desc = "CLI and CI tool for testing prompts, agents and RAG, with red teaming." },
+  { repo = "confident-ai/deepeval", desc = "Pytest-style evaluation framework with LLM-as-judge metrics." },
+  { repo = "vibrantlabsai/ragas", desc = "Evaluation metrics and test-data generation for RAG and LLM apps." },
+  { repo = "EleutherAI/lm-evaluation-harness", desc = "Few-shot benchmark harness for evaluating language models." },
+  { repo = "open-compass/opencompass", desc = "Model evaluation platform across 100+ benchmark datasets." },
+  { repo = "openai/evals", desc = "Framework and registry of benchmarks for evaluating LLMs.", license = "MIT" },
+  { repo = "Giskard-AI/giskard-oss", desc = "Evaluation and testing library for LLM agents." },
+  { repo = "truera/trulens", desc = "Evaluation and tracking for LLM experiments and agents." },
+  { repo = "ianarawjo/ChainForge", desc = "Visual environment for comparing prompts and models side by side." },
+  { repo = "UKGovernmentBEIS/inspect_ai", desc = "Framework for LLM evaluations from the UK AI Security Institute." },
+  { repo = "stanford-crfm/helm", desc = "Holistic Evaluation of Language Models, from Stanford CRFM." },
+  { repo = "uptrain-ai/uptrain", desc = "Preconfigured checks for grading LLM responses." },
+  { repo = "MCPJam/inspector", desc = "Testing and evaluation tool for MCP servers and apps.", license = "Apache-2.0 + commercial" },
+  { repo = "mattpocock/evalite", desc = "TypeScript eval runner with a local UI." },
+  { repo = "cvs-health/uqlm", desc = "Hallucination detection using uncertainty quantification." },
+  { repo = "prometheus-eval/prometheus-eval", desc = "Open evaluator models for scoring LLM responses." },
+  { repo = "JudgmentLabs/judgeval", desc = "Evals and monitoring for agents." },
+  { repo = "harbor-framework/harbor", desc = "Framework for evaluating and improving agents." },
+  { repo = "hegelai/prompttools", desc = "Tools for prompt testing and experiments across models and vector DBs." },
+  { repo = "langchain-ai/openevals", desc = "Ready-made evaluators for LLM apps." },
+  { repo = "braintrustdata/autoevals", desc = "Library of evaluators for scoring AI model outputs." },
+  { repo = "relari-ai/continuous-eval", desc = "Data-driven, modular evaluation for LLM pipelines." },
+  { repo = "rhesis-ai/rhesis", desc = "Test generation and review workflows for LLM apps and agents.", license = "MIT + EE" },
+  { repo = "plurai-ai/intellagent", desc = "Agent evaluation through simulated, synthetic conversations." },
+  { repo = "empirical-run/empirical", desc = "Test and compare LLMs and model configurations." },
+  { repo = "microsoft/promptpex", desc = "Generates test cases from prompts." },
+  { repo = "agentevals-dev/agentevals", desc = "Framework-agnostic agent evaluations from OpenTelemetry traces." },
+  { repo = "AlmogBaku/pytest-evals", desc = "Pytest plugin for LLM evaluation tests." },
+  { repo = "TonicAI/tonic_validate", desc = "Metrics for evaluating RAG responses." },
+  { repo = "kolenaIO/autoarena", desc = "Ranks models, RAG systems and prompts through head-to-head judging." },
+  { repo = "dokimos-dev/dokimos", desc = "LLM and agent evaluation for Java and Kotlin, run in JUnit." },
+  { repo = "viteval/viteval", desc = "LLM evaluation framework built on Vitest." },
+  { repo = "google/litmus", desc = "LLM testing and evaluation tool with a web UI." },
+]
+
+[[category]]
+name = "Red teaming and security testing"
+blurb = "Attack your own LLM app before someone else does: jailbreaks, prompt injection, data leaks."
+projects = [
+  { repo = "NVIDIA/garak", desc = "LLM vulnerability scanner." },
+  { repo = "Tencent/AI-Infra-Guard", desc = "Red-teaming platform covering agents, MCP servers and jailbreaks." },
+  { repo = "confident-ai/deepteam", desc = "Framework for red teaming LLMs and agents." },
+  { repo = "msoedov/agentic_security", desc = "Vulnerability scanner and red-teaming kit for LLM apps." },
+  { repo = "cyberark/FuzzyAI", desc = "Automated fuzzing to find jailbreaks in LLMs." },
+]
+
+[[category]]
+name = "Guardrails"
+blurb = "Check inputs and outputs at runtime and block what should not pass."
+projects = [
+  { repo = "NVIDIA-NeMo/Guardrails", desc = "Programmable guardrails for conversational LLM systems.", license = "Apache-2.0" },
+  { repo = "guardrails-ai/guardrails", desc = "Validators that check and correct LLM inputs and outputs." },
+  { repo = "protectai/llm-guard", desc = "Input and output scanners for LLM interactions." },
+  { repo = "protectai/rebuff", desc = "Prompt-injection detector." },
+  { repo = "deadbits/vigil-llm", desc = "Detects prompt injections and jailbreaks in LLM inputs." },
+  { repo = "ZenGuard-AI/fast-llm-security-guardrails", desc = "Guardrails for prompt injection, PII and topic control." },
+  { repo = "trylonai/gateway", desc = "Self-hosted LLM firewall with configurable guardrails.", license = "BUSL-1.1", source_available = true },
+  { repo = "arekusandr/last_layer", desc = "Low-latency prompt-injection and jailbreak detection." },
+  { repo = "presidio-oss/hai-guardrails", desc = "TypeScript guards for LLM applications.", license = "MIT" },
+]
+
+[[category]]
+name = "LLM gateways and routers"
+blurb = "One API in front of many model providers, with routing, fallbacks, keys, budgets and logs."
+projects = [
+  { repo = "diegosouzapw/OmniRoute", desc = "OpenAI-compatible gateway over hundreds of providers, many with free tiers." },
+  { repo = "BerriAI/litellm", desc = "Python SDK and proxy server for 100+ LLM APIs, with cost tracking and budgets.", license = "MIT + EE" },
+  { repo = "QuantumNous/new-api", desc = "Model aggregation gateway that converts between OpenAI, Claude and Gemini formats." },
+  { repo = "songquanpeng/one-api", desc = "LLM API key management and distribution behind one OpenAI-style API." },
+  { repo = "Portkey-AI/gateway", desc = "AI gateway with routing, retries, caching and built-in guardrails." },
+  { repo = "maximhq/bifrost", desc = "Go AI gateway with load balancing, clustering, guardrails and budgets." },
+  { repo = "mnfst/llm-gateway", desc = "Self-hosted LLM gateway from Manifest." },
+  { repo = "katanemo/plano", desc = "Proxy and data plane for agent apps: model routing, observability and guardrails." },
+  { repo = "tbphp/gpt-load", desc = "Self-hosted gateway that pools keys and accounts, with failover and request logs." },
+  { repo = "vllm-project/semantic-router", desc = "Routes each request to a model based on its content, from the vLLM project." },
+  { repo = "looplj/axonhub", desc = "AI gateway with failover, load balancing, cost control and tracing." },
+  { repo = "theopenco/llmgateway", desc = "Routes, manages and analyzes LLM requests across providers.", license = "AGPL-3.0 + EE" },
+  { repo = "theagentrouter/agent-router", desc = "AI gateway built on Envoy Gateway (formerly Envoy AI Gateway)." },
+  { repo = "ENTERPILOT/GoModel", desc = "Go AI gateway with OpenAI- and Anthropic-compatible APIs." },
+  { repo = "ThinkWatchProject/ThinkWatch", desc = "Self-hosted AI and MCP gateway with SSO, RBAC and PII redaction.", license = "BUSL-1.1", source_available = true },
+  { repo = "Helicone/ai-gateway", desc = "Rust AI gateway from Helicone." },
+  { repo = "NadirRouter/NadirClaw", desc = "Routes simple prompts to cheap models and hard ones to premium models.", license = "PolyForm-Noncommercial-1.0.0", source_available = true },
+  { repo = "smg-project/smg", desc = "Rust LLM gateway across self-hosted engines and hosted APIs." },
+  { repo = "adaline/gateway", desc = "Local SDK with one interface to 200+ LLMs." },
+  { repo = "labring/aiproxy", desc = "AI gateway with multi-channel routing and error handling." },
+  { repo = "Mirrowel/LLM-API-Key-Proxy", desc = "OpenAI- and Anthropic-compatible proxy with key rotation and load balancing.", license = "LGPL-3.0 / MIT" },
+  { repo = "mozilla-ai/otari", desc = "Self-hosted OpenAI-compatible gateway with virtual keys and budgets, from Mozilla.ai." },
+  { repo = "Writesonic/GPTRouter", desc = "Routes across LLM and image models with fallbacks." },
+  { repo = "atopos31/llmio", desc = "LLM gateway with weighted load balancing and cost tracking." },
+  { repo = "ferro-labs/ai-gateway", desc = "Go AI gateway with caching, guardrails, A/B tests and cost controls." },
+  { repo = "traceloop/hub", desc = "Rust LLM gateway with OpenTelemetry tracing." },
+  { repo = "yolorouter/yolorouter", desc = "Self-hosted gateway with failover, key rotation and an admin console." },
+  { repo = "api7/aisix", desc = "Rust AI gateway with routing and guardrails, from API7." },
+  { repo = "EinStack/glide", desc = "Model gateway for production GenAI apps." },
+  { repo = "openziti/llm-gateway", desc = "Zero-trust LLM gateway with semantic routing." },
+]
+
+[[category]]
+name = "API and agent gateways with AI support"
+blurb = "General API gateways that added LLM features, and gateways for MCP and agent traffic."
+projects = [
+  { repo = "Kong/kong", desc = "API gateway with AI plugins for multi-LLM routing and governance." },
+  { repo = "apache/apisix", desc = "Cloud-native API gateway with AI proxy plugins." },
+  { repo = "TykTechnologies/tyk", desc = "API gateway with AI and MCP support.", license = "MPL-2.0 + EE" },
+  { repo = "higress-group/higress", desc = "AI-native API gateway built on Envoy and Istio." },
+  { repo = "kgateway-dev/kgateway", desc = "Kubernetes-native API gateway with AI gateway features." },
+  { repo = "agentgateway/agentgateway", desc = "Proxy for agent-to-agent and MCP traffic." },
+  { repo = "IBM/mcp-context-forge", desc = "Gateway and registry in front of MCP, A2A and REST services." },
+  { repo = "APIParkLab/APIPark", desc = "AI and API gateway with an API developer portal." },
+]
+
+[[category]]
+name = "Prompt management"
+blurb = "Store, version, test and serve prompts outside your application code."
+projects = [
+  { repo = "promptslab/Promptify", desc = "Prompt templates and versioning for structured LLM output." },
+  { repo = "microsoft/prompty", desc = "File format and tooling for creating, running and evaluating prompts." },
+  { repo = "lastmile-ai/aiconfig", desc = "Config-based format for storing prompts and model settings." },
+  { repo = "YellowSeaa/PromptWorks", desc = "Prompt management and testing tool." },
+  { repo = "llmkit-ai/llmkit", desc = "Prompt versioning, testing and evaluation server with a UI." },
+  { repo = "proofhound/proofhound", desc = "Prompt management, optimization and release platform." },
+  { repo = "newdee/prompt-shelf", desc = "Lightweight prompt management system." },
+  { repo = "promptphp/deck", desc = "Laravel package for versioned prompts with A/B testing." },
+  { repo = "promptdesk/promptdesk", desc = "Create, organize and evaluate prompts." },
+]
